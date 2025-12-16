@@ -1,14 +1,16 @@
-# 20_series.py
 # Coding Challenge 20: Display the Series 1,2,4,7,11,16,22...N
 
 def print_incremental_series(n):
     value = 1
     diff = 1
+    series = []
 
     for _ in range(n):
-        print(value, end=" ")
-        diff += 1
+        series.append(str(value))
         value += diff
+        diff += 1
+
+    print(",".join(series))
 
 
 if __name__ == "__main__":

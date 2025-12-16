@@ -1,12 +1,13 @@
-# 22_series.py
 # Coding Challenge 22: Display the Series 1,4,7,12,23...N
 
 def print_custom_series(n):
     value = 1
+    diff = 3
 
-    for i in range(n):
+    for _ in range(n):
         print(value, end=" ")
-        value += (2 * i + 1)
+        value += diff
+        diff = diff * 2 - 1
 
 
 if __name__ == "__main__":
