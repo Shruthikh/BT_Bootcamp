@@ -1,7 +1,5 @@
-# -------------------------------------------------------
+
 # HealWell Care Hospital Billing System
-# Covers Level 1 to Level 8 with full edge case handling
-# -------------------------------------------------------
 
 # -------------------------------
 # Level 7: Admin sets services of the day
@@ -22,9 +20,9 @@ SENIOR_DISCOUNT = 0.10
 HIGH_BILL_DISCOUNT = 0.05
 
 
-# -------------------------------
+
 # Level 1: Patient Walks In and Shares Their Details
-# -------------------------------
+
 def get_patient_details():
     name = input("Enter patient name: ").strip()
     if not name:
