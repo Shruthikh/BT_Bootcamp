@@ -1,0 +1,161 @@
+/* Typography */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+}
+
+/* Header + Sticky (Lab 9) */
+header {
+  background: #1e293b;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  position: sticky;
+  top: 56px; /* Below navbar on md+ */
+  z-index: 99;
+}
+
+/* LAB 5: RESPONSIVE - Mobile padding adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 12px 8px;
+    top: 56px;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Navigation */
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Card layout - Responsive padding */
+.card-custom {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* LAB 5: Details/Summary responsive styling */
+details {
+  margin-top: 8px;
+}
+
+summary {
+  cursor: pointer;
+  padding: 8px 0;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+summary:hover {
+  color: #0d6efd;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Login Flexbox - Mobile responsive */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0 15px;
+}
+
+/* Profile Image - Responsive */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Gallery - Responsive Grid */
+.gallery-item img {
+  border-radius: 6px;
+  transition: transform 0.3s;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+/* LAB 5: RESPONSIVE BREAKPOINTS */
+/* Extra Small (Mobile): < 576px */
+@media (max-width: 575.98px) {
+  .container-fluid {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices: >= 576px */
+@media (min-width: 576px) {
+  .card-custom {
+    padding: 20px;
+  }
+}
+
+/* Tablet (md): >= 768px */
+@media (min-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  
+  .card-custom {
+    padding: 25px;
+  }
+}
+
+/* Large Devices (lg): >= 992px */
+@media (min-width: 992px) {
+  .card-custom {
+    padding: 30px;
+  }
+  
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Extra Large (xl): >= 1200px */
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.1rem;
+  }
+}
